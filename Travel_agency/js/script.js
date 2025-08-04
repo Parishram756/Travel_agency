@@ -1,18 +1,19 @@
 const images = [
-  'image1.jpg',
-  'image2.jpg',
-  'image3.jpg',
-  'image4.jpg',
-  'image5.jpg'
+   '../assets/images/lake.jpg',
+   '../assets/images/bangladesh_momentum.jpg',
+   'images/tracking.jpg',
+   'images/wildlife.jpg'
 ];
 
 let current = 0;
-const hero = document.querySelector('.hero');
+const hero = document.querySelector('Section.hero');
 
 function changeBackground() {
-  hero.style.backgroundImage = url('${images[current]}');
-  current = (current + 1) % images.length;
+    if (images.length > 0 && hero) {
+        hero.style.backgroundImage = url('${images[current]}');
+        current = (current + 1) % images.length;
+    }
 }
 
-setInterval(changeBackground, 5000);
+setInterval(changeBackground, 100);
 changeBackground(); // Initial call
