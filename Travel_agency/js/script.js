@@ -17,3 +17,12 @@ function changeBackground() {
 
 setInterval(changeBackground, 100);
 changeBackground(); // Initial call
+
+const imageModal = document.getElementById('imageModal');
+  const modalImage = document.getElementById('modalImage');
+
+  imageModal.addEventListener('show.bs.modal', function (event) {
+    const triggerImage = event.relatedTarget;
+    const imageUrl = triggerImage.getAttribute('data-bs-image');
+    modalImage.src = imageUrl;
+  });
