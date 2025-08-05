@@ -5,29 +5,86 @@
 }
 
 body{
-    background-color: #EDECEA;
+    background-color: #c60c1b;
+    font-family: Arial, Helvetica, sans-serif;
     
 
 }
-.container{
-    margin-top: 0px;
-    margin-bottom: 0px;
+/* Basic styling for the navigation bar */
+.navbar {
+  background-color: #ffffff; /* White background */
+  border-bottom: 1px solid #e0e0e0; /* Light gray border at the bottom */
+  position: relative; /* Needed for positioning the logo */
 }
-   
 
-.nav-item{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin:30px;
-    color: black;
-    font-size: large;
-    font-weight: bold;
+/* Style for the centered logo */
+.logo-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100; /* Ensure it's above other elements */
 }
-.brandlogo{
-    border-radius: 40px;
-    height: 150px;
-    width: 150px;
+
+/* Style for the logo circle and text */
+.logo-circle {
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  border-radius: 100px; /* Makes it a circle */
+  background-color: #ffffff; /* White background for the circle */
+  border: none; /* Black border around the circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: add a subtle shadow */
 }
+
+
+
+
+/* Style for the navigation links */
+.nav-link {
+  color: #333333; /* Dark gray text */
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #007bff; /* Example hover color */
+}
+
+/* Custom styling for the different navigation sections */
+.navbar .nav-link {
+  /* Default styling for top navigation */
+  font-size: 14px;
+}
+
+.navbar .nav-link.destinations,
+.navbar .nav-link.best-of-bmtm {
+  /* Styling for the second row of navigation items */
+  text-align: center;
+  /* Additional styles for icons and text */
+}
+
+/* Style for the search box */
+.search-box .form-control {
+  border-radius: 20px;
+}
+.search-box .btn {
+  border-radius: 20px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 991.98px) {
+  .logo-center {
+    position: static;
+    transform: none;
+    margin: 0 auto 10px;
+  }
+}
+
 
 Section.hero {
   position: relative;
