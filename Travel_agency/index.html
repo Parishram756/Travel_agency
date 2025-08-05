@@ -12,127 +12,143 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <!--custom jquery-->
+    <script>
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+    </script>
+
 </head>
-<body>
-    <!--navgation section-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT ME</a>
-            </li>
-            </ul>
+    <body>
+        <!--navgation section-->
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+             <div class="logo-circle">
+                        <img src="assets/images/travel_tales.jpg" alt="Travel Tales & Trail" class="img-fluid">
+                    </div>
+            <div class="container-fluid">
+                <a class="navbar-brand d-lg-none" href="#">
+                   
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <a class="navbar-brand logo-center d-none d-lg-block" href="#">
-            <div class="logo-circle">
-                <img src="assets/images/travel_tales.jpg" alt="Travel Tales & Trail" class="img-fluid">
+                
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT ME</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="#">DESTINATIONS</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
-            </a>
+        </nav>
 
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="#">DESTINATIONS</a>
-            </li>
-            </ul>
-
-            <div class="d-flex search-box ms-3">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+        <!--Hero section-->
+                
+        <header class="hero-section">
+        <div id="imageCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
 
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/mountain.jpg" class="d-block w-100 hero-image" alt="A mountains photo of nepal.">
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                        <div class="text-content">
+                            <h1 class="display-3">Explore the Great Outdoors</h1>
+                            <p class="lead">Reach New Heights.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/treaking.jpg" class="d-block w-100 hero-image" alt=" Offroad treaking in Nepal">
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                        <div class="text-content">
+                            <h1 class="display-3">Discover breathtaking landscapes and new adventures</h1>
+                            <p class="lead">Challenge yourself and find your inner strength.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/agricultural.jpg" class="d-block w-100 hero-image" alt="Traditional agricultural in hilly area">
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                        <div class="text-content">
+                            <h1 class="display-3">Traditional Farming</h1>
+                            <p class="lead">Experience the vibrant energy.</p>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/tea_farming.jpg" class="d-block w-100 hero-image" alt="Tea Farming in Illam Nepal">
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                        <div class="text-content">
+                            <h1 class="display-3">Tea Farming</h1>
+                            <p class="lead">Unwind and relax in the nature.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </nav>
+    </header>
 
-    <!--Hero section-->
-            
-    <div class="container-hero">
-        <Section class="hero" role="banner" aria-label="promational section">
-                <div class="hero-overlay-container">
-                    <div class="hero-content">
-                        <h1>OFF THE BEATEN PATH ADVENTURES</h1>
-                        <a href="#" class="btn">READ FULL STORY</a>
-                    </div>
-
+    <!--main section-->
+    <div class="main-container">
+        <div class="row g-0"> <!-- g-0 removes gutters between columns -->
+            <!-- Left Column: Image -->
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="image-column">
+                    <img src="assets/images/boating.jpg" alt="person boating in a lake" class="img-fluid">
                 </div>
-        </Section>  
-    </div>  
-
-    <!-- Main container for the entire page content -->
-    <div class="container-fluid d-flex flex-column p-0 mb-0">
-
-        <!-- Header section with a blue background -->
-        <header class="header-bg text-blue rounded-3 shadow-lg d-flex flex-column flex-md-row align-items-center justify-content-between">
-            <h4 class="display-4 fw-bold mb-md-0">#Travel Tail & Trail</h4>
-            <div class="row g-4 justify-content-center">
-
-                <!-- Individual Image Card -->
-                <!-- The responsive grid classes ensure it adapts to different screen sizes. -->
-                <!-- It shows 1 column on extra-small, 2 on small, 3 on medium, and 5 on large screens. -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2 p-0">
-                    <div class="image-container">
-                        <img src="assets/images/image1.jpg" 
-                             alt="picture of valley"
-                             class="ghandruk valley">
-                        <div class="image-overlay fs-5">@dominik.kobler</div>
-                    </div>
-                </div>
-
-                <!-- Individual Image Card -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2 p-0">
-                    <div class="image-container">
-                        <img src="assets/images/image2.jpg" 
-                             alt="photography of mountain"
-                             class="w-100 rounded-3">
-                        <div class="image-overlay fs-5">@mountain</div>
-                    </div>
-                </div>
-
-                <!-- Individual Image Card -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2 p-0">
-                    <div class="image-container">
-                        <img src="assets/images/images3.jpg" 
-                             alt="swoyembunath temple"
-                             class="w-100 rounded-3">
-                        <div class="image-overlay fs-5">@swoyembunath</div>
-                    </div>
-                </div>
-
-                <!-- Individual Image Card -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2 p-0">
-                    <div class="image-container">
-                        <img src="assets/images/images4.jpg" 
-                             alt="paragliding"
-                             class="w-100 rounded-3">
-                        <div class="image-overlay fs-5">@paragliding</div>
-                    </div>
-                </div>
-
-                <!-- Individual Image Card -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2 p-0">
-                    <div class="image-container">
-                        <img src="assets/images/image6.jpg" 
-                             alt="boating on a lake"
-                             class="w-100 rounded-3">
-                        <div class="image-overlay fs-5">@boating</div>
-                    </div>
-                </div>
-
             </div>
-        </header>
 
-        
+            <!-- Right Column: Content -->
+            <div class="col-lg-6">
+                <div class="content-column">
+                    <h1>Travel Tales & Trail</h1>
 
+                    <blockquote>
+                        "The world is a book, and those who do not travel read only one page."
+                    </blockquote>
+
+                    <p>
+                        Embark on a journey with Travel Tales & Trail and unlock the boundless wonders of our planet. Discovering new places is more than just sightseeing; it's an enriching experience that broadens your perspective, ignites your spirit, and creates unforgettable memories. Each new destination offers a unique tapestry of cultures, landscapes, and stories waiting to be explored, leaving you with a deeper understanding of yourself and the incredible diversity of the world.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
+                
 
-    
-
-
-
-</body>
+    </body>
 </html>
