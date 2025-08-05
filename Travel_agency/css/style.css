@@ -5,16 +5,20 @@
 }
 
 body{
-    background-color: #c60c1b;
+    background-color: #dd7881;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    padding-top: 0px;
     
 
 }
 /* Basic styling for the navigation bar */
 .navbar {
-  background-color: #ffffff; /* White background */
+  height: 100px;
+  background-color: hsl(0, 0%, 100%); /* White background */
   border-bottom: 1px solid #e0e0e0; /* Light gray border at the bottom */
   position: relative; /* Needed for positioning the logo */
+  padding-top: 10px;
 }
 
 /* Style for the centered logo */
@@ -28,17 +32,17 @@ body{
 
 /* Style for the logo circle and text */
 .logo-circle {
-  width: 150px; /* Adjust size as needed */
-  height: 150px; /* Adjust size as needed */
+  width: 160px; /* Adjust size as needed */
+  height: 160px; /* Adjust size as needed */
   border-radius: 100px; /* Makes it a circle */
-  background-color: #ffffff; /* White background for the circle */
+  background-color:#ffff; /* White background for the circle */
   border: none; /* Black border around the circle */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: add a subtle shadow */
+  box-shadow:#ffffff; /* Optional: add a subtle shadow */
 }
 
 
@@ -134,3 +138,28 @@ Section.hero {
   background: #fff;
   color: #000;
 }
+
+        /* Container for each image to handle positioning and overflow */
+.image-container {
+     position: relative;
+     overflow: hidden;
+     border-radius: 0.5rem; /* Matches Bootstrap's rounded-3 class */
+     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+     cursor: pointer;
+ }
+
+        /* Defines the hover effect: scales the image up and adds a shadow */
+ .image-container:hover {
+     transform: scale(1.05);
+     box-shadow: 0 1rem 3rem rgba(0,0,0,.25);
+  }
+
+        /* Positions the username text at the bottom of the image */
+  .image-overlay {
+      position: absolute;
+      bottom: 0.5rem;
+      left: 0.5rem;
+      color: #fff;
+      font-weight: 500;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Adds a shadow for better readability on various images */
+  }

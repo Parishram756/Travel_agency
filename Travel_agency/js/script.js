@@ -1,28 +1,19 @@
 const images = [
-   '../assets/images/lake.jpg',
-   '../assets/images/bangladesh_momentum.jpg',
-   'images/tracking.jpg',
-   'images/wildlife.jpg'
+   '/Travel_agency/assets/images/lake.jpg',
+   '/Travel_agency/assets/images/tracking.jpg',
+   '/Travel_agency/assets/images/wildlife.jpg',
+   '/Travel_agency/assets/images/grassland.jpg',
+  '/Travel_agency/assets/images/bangladesh_momentum.jpg'
 ];
 
 let current = 0;
-const hero = document.querySelector('Section.hero');
+const hero = document.querySelector('.hero');
 
 function changeBackground() {
     if (images.length > 0 && hero) {
-        hero.style.backgroundImage = url('${images[current]}');
+        hero.style.backgroundImage =` url('${images[current]}')`;
         current = (current + 1) % images.length;
     }
 }
-
-setInterval(changeBackground, 100);
-changeBackground(); // Initial call
-
-const imageModal = document.getElementById('imageModal');
-  const modalImage = document.getElementById('modalImage');
-
-  imageModal.addEventListener('show.bs.modal', function (event) {
-    const triggerImage = event.relatedTarget;
-    const imageUrl = triggerImage.getAttribute('data-bs-image');
-    modalImage.src = imageUrl;
-  });
+setInterval(changeBackground,1000);
+changeBackground();
