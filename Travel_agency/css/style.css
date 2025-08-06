@@ -5,121 +5,111 @@
 }
 
 body{
-    background-color: #3A0099;
+    background-color: #9661ec; 
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
     padding-top: 0px;
     
 
 }
-/* Custom CSS for the Navbar */
-.logo-circle{
-  max-height: 100px;
-  max-width: 100px;
 
+/* Navbar Styling */
+.navbar {
+    background-color: #ffffff !important; /* White background for navbar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+    padding: 10px 20px;
 }
 
-/* * ----------------------------------------------------
- * RESPONSIVE LAYOUT FIXES
- * ----------------------------------------------------
- * These rules fix the wrapping issue on medium-sized screens
- */
-
-.navbar-nav {
-    flex-direction: row; /* Ensure links stay in a row */
+.navbar-brand .logo-circle {
+    width: 120px; /* Size of the logo circle */
+    height: 80px;
+    border-radius: 30%; /* Make it a circle */
+    overflow: hidden; /* Hide overflow for circular image */
+    display: flex;
+    justify-content: center;
+    border: 2px solid #17a2b8; /* Border around the logo */
+    transition: transform 0.3s ease;
 }
 
-/* Custom layout for medium screens (between lg and xl) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    .navbar-collapse {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    /* Force the search box to a new line on smaller desktop screens if needed */
-    .navbar-collapse .ms-auto {
-        margin-left: 1rem !important;
-        margin-right: 1rem;
-    }
+.navbar-brand .logo-circle:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
-/* Custom layout for large screens (lg and up) */
-@media (min-width: 992px) {
-    .navbar-brand.mx-auto {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        margin: 0 !important;
-    }
-
-    .navbar-collapse {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    .navbar-collapse .navbar-nav {
-        flex-grow: 1; /* Allow the nav lists to take up space */
-        justify-content: flex-start;
-    }
-    
-    .navbar-collapse .navbar-nav:last-child {
-        justify-content: flex-end;
-    }
-
-    .navbar-collapse .ms-auto {
-        margin-left: auto !important; /* Re-apply auto margin */
-    }
-
-    .navbar-nav.me-auto {
-        padding-right: 15%; /* Adjust this value to balance the space around the logo */
-    }
-
-    .navbar-nav.ms-auto {
-        padding-left: 15%; /* Adjust this value to balance the space around the logo */
-    }
-}
-
-
-/* Additional small screen adjustments */
-@media (max-width: 991.98px) {
-    /* Stack the items vertically when the menu is collapsed on mobile */
-    .navbar-nav {
-        flex-direction: column;
-    }
-    
-    /* Center text inside the mobile menu */
-    .navbar-collapse {
-        text-align: center;
-    }
-
-    /* Add some spacing between items in the mobile menu */
-    .navbar-nav .nav-item {
-        margin-bottom: 0.5rem;
-    }
-
-    .navbar-brand {
-        margin-right: 0;
-        margin-left: 0;
-    }
-}
-
-/* Custom CSS for the Hero Section */
-.hero-section {
-    position: relative;
+.navbar-brand .logo-circle img {
     width: 100%;
-    height: 70vh;
-    overflow: hidden; /* Ensures content doesn't overflow */
+    height: 100%;
+    object-fit: cover; /* Ensure image covers the circle */
 }
 
-/* Make the carousel full screen */
-.carousel, .carousel-inner, .carousel-item {
-    height: 100%;
+.navbar-nav .nav-link {
+    color: #000000 !important; /* Black text color */
+    font-weight: 700; /* Bold font weight */
+    margin: 0 10px; /* Space between nav items */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 8px 15px; /* Padding for hover highlight */
+    border-radius: 5px; /* Rounded corners for highlight */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #17a2b8 !important; /* Blue on hover */
+    background-color: rgba(23, 162, 184, 0.1); /* Light blue highlight */
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #ffffff; /* White background for dropdown */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .dropdown-item {
+    color: #000000; /* Black text for dropdown items */
+    font-weight: normal;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: #e0f7fa; /* Light blue on hover */
+    color: #17a2b8; /* Blue text on hover */
+}
+
+.btn-outline-success {
+    color: #17a2b8;
+    border-color: #17a2b8;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-outline-success:hover {
+    background-color: #17a2b8;
+    color: #ffffff;
+    border-color: #17a2b8;
+}
+ /* Custom square modal with background image */
+.modal-content {
+    background-size: cover;
+    color: white;
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+}
+.mail{
+    margin: 30px;
+}
+
+.modal-body {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal-title {
+    color: #ffffff;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.1rem;
 }
 
 /* Style the image to be a background */
@@ -127,9 +117,8 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    
+    min-width: fit-content;
+    min-height: fit-content;
     z-index: -1;
     transform: translate(-50%, -50%);
     object-fit: cover; /* Ensures the image covers the entire container */
@@ -181,71 +170,248 @@ body{
     opacity: 0;
 }
 .main-container {
-             /* Max width for the entire two-column section */
-            width: 100%;
-            background: #fff;
-            margin-top: 40px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            overflow: hidden; /* Ensures content respects border-radius */
-        }
+    /* Max width for the entire two-column section */
+    width: 100%;
+    background: #fff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden; /* Ensures content respects border-radius */
+}
 
-        .image-column {
-            height: 100%; /* Ensure image column takes full height of its parent row */
-            max-height: 400px;
-        }
+.image-column {
+    height: 100%; /* Ensure image column takes full height of its parent row */
+    max-height: 400px;
+}
 
-        .image-column img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Ensures the image covers the area without distortion */
-            display: block; /* Remove extra space below image */
-            border-top-right-radius: 70px;
-            border-bottom-right-radius: 70px;
-        }
+.image-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    display: block; /* Remove extra space below image */
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
 
-        .content-column {
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* Vertically center content */
-            align-items: flex-start; /* Align text to the start (left) */
-            min-height: 400px; /* Minimum height for content column */
-        }
+.content-column {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: flex-start; /* Align text to the start (left) */
+    min-height: 400px; /* Minimum height for content column */
+}
 
-        h1 {
-            color: #2c3e50;
-            text-align: left; /* Align heading to left */
-            margin-bottom: 20px;
-        }
+h1 {
+    color: #2c3e50;
+    text-align: left; /* Align heading to left */
+    margin-bottom: 20px;
+}
 
-        blockquote {
-            font-style: italic;
-            margin: 20px 0;
-            padding: 10px 20px;
-            border-left: 5px solid #3498db;
-            background-color: #ecf0f1;
-            color: #555;
-        }
+blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-left: 5px solid #3498db;
+    background-color: #ecf0f1;
+    color: #555;
+}
 
-        p {
-            margin-bottom: 15px;
-        }
+p {
+    margin-bottom: 15px;
+}
 
-        /* Responsive adjustments */
-        @media (max-width: 991.98px) { /* For screens smaller than large (lg) breakpoint */
-            .image-column {
-                display: none; /* Hide the image column on smaller screens */
-            }
-            .content-column {
-                padding: 20px; /* Adjust padding for smaller screens */
-            }
-            h1 {
-                text-align: center; /* Center heading on smaller screens */
-            }
-            blockquote {
-                text-align: left; /* Keep blockquote left-aligned */
-            }
-        }
+/* Responsive adjustments */
+@media (max-width: 991.98px) { /* For screens smaller than large (lg) breakpoint */
+    .image-column {
+        display: none; /* Hide the image column on smaller screens */
+    }
+    .content-column {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+    h1 {
+        text-align: center; /* Center heading on smaller screens */
+    }
+    blockquote {
+        text-align: left; /* Keep blockquote left-aligned */
+    }
+}
+/* Main container styling */
+.min-button-container {
+    background-color: #ffffff; /* White background for the main content area */
+    padding: 40px; /* Generous padding inside the container */
+    border-radius: 15px; /* Slightly more rounded corners for a softer look */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 100%; /* Limit the maximum width of the container */
+    width: 100%; /* Ensure it's responsive and takes full width on small screens */
+    margin: 0 auto; /* Center the container horizontally */
+}
 
- 
+/* Heading styling */
+h1 {
+    color: #333; /* Dark grey color for the heading */
+    margin-bottom: 50px; /* Space below the heading */
+    font-weight: 700; /* Bold font weight for impact */
+    text-align: center; /* Center align the heading text */
+}
+
+/* Styling for each country card */
+.country-card {
+    background-color: #e0f7fa; /* Light blue background for the cards */
+    border: 1px solid #b2ebf2; /* A lighter blue border */
+    cursor: pointer; /* Indicate that the card is clickable */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Center content horizontally */
+    min-height: 350px; /* Ensure cards have a consistent minimum height to fit carousel */
+    position: relative; /* Needed for absolute positioning of the heart icon */
+    padding: 15px; /* Add padding to prevent content from touching edges */
+    overflow: hidden; /* Hide overflowing parts of the carousel */
+}
+
+/* Hover effect for country cards */
+.country-card:hover {
+    transform: translateY(-8px); /* Lift the card slightly on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    background-color: #c0f1f8; /* Slightly darker blue on hover */
+
+    a:hover {
+    color: #dc3545; /* Bootstrap's danger red color */
+    }
+}
+
+/* Heart icon styling */
+.favorite-icon {
+    position: absolute; /* Position absolutely within the card */
+    top: 15px; /* 15px from the top */
+    right: 15px; /* 15px from the right */
+    font-size: 1.8rem; /* Size of the heart icon */
+    color: #ccc; /* Default grey color */
+    cursor: pointer; /* Indicate clickable */
+    z-index: 10; /* Ensure it's above the carousel */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Styling for the country name inside the card, at the bottom */
+.country-name-inside {
+    color: #0056b3; /* Darker blue for the text */
+    font-weight: 600; /* Semi-bold font weight */
+    font-size: 1.5rem; /* Appropriate font size for the country name */
+    text-align: center; /* Center align the text */
+    margin-top: auto; /* Pushes the h3 to the very bottom within the flex container */
+    margin-bottom: 0; /* Remove default bottom margin */
+}
+
+/* Carousel specific styling (for the carousels inside the country cards) */
+.carousel-inner {
+    width: 100%;
+    height: 250px; /* Fixed height for carousel to ensure consistency */
+    border-radius: 8px; /* Rounded corners for the carousel */
+    overflow: hidden; /* Ensure images stay within rounded corners */
+    /* Removed margin-bottom here as country name is now inside */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 250px; /* Make images fill the carousel item height */
+    object-fit: cover; /* Crop images to cover the area without distortion */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Adjust carousel controls for better visibility */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.4); /* Darker background for controls */
+    border-radius: 50%; /* Make controls circular */
+    padding: 10px; /* Add padding to make them larger */
+}
+
+/* Responsive adjustments for smaller screens (Bootstrap breakpoint for small devices) */
+@media (max-width: 767.98px) {
+    .min-button-container {
+        padding: 25px; /* Reduce padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 2rem; /* Reduce heading font size */
+        margin-bottom: 30px; /* Adjust margin below heading */
+    }
+
+    .country-card {
+        min-height: 300px; /* Adjust height for smaller screens */
+    }
+
+    .carousel-inner, .carousel-item img {
+        height: 200px; /* Adjust carousel height for smaller screens */
+    }
+
+    .favorite-icon {
+        font-size: 1.5rem; /* Reduce icon size */
+    }
+
+    .country-name-inside { /* Updated class name */
+        font-size: 1.3rem; /* Reduce text font size */
+    }
+}
+
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+/* Make the carousel full screen */
+.carousel, .carousel-inner, .carousel-item {
+    height: 100%;
+}
+
+/* Footer Styling */
+.main-footer {
+    background-color: #474c51; /* Dark background for the footer */
+    color: #f8f9fa; /* Light text color */
+    padding: 40px 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1); /* Shadow at the top of the footer */
+}
+
+.footer-heading {
+    color: #17a2b8; /* Info blue for headings */
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    margin-bottom: 10px;
+}
+
+.footer-list a {
+    color: #f8f9fa; /* Light text color for links */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-list a:hover {
+    color: #17a2b8; /* Hover color for links */
+}
+
+.footer-bottom {
+    background-color: black;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
+    text-align: center;
+    color: white;
+    justify-content: center;
+    padding:5px;
+}
+
