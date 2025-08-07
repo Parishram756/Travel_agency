@@ -169,12 +169,13 @@ body{
 .carousel-fade .carousel-item-prev {
     opacity: 0;
 }
+
+/*styling main container*/
 .main-container {
-    /* Max width for the entire two-column section */
+    height: 500px;
     width: 100%;
     background: #fff;
     margin-top: 40px;
-    margin-bottom: 40px;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     overflow: hidden; /* Ensures content respects border-radius */
@@ -182,7 +183,7 @@ body{
 
 .image-column {
     height: 100%; /* Ensure image column takes full height of its parent row */
-    max-height: 400px;
+    max-height: 500px;
 }
 
 .image-column img {
@@ -237,7 +238,110 @@ p {
         text-align: left; /* Keep blockquote left-aligned */
     }
 }
-/* Main container styling */
+
+.main-middle {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.main-middle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: 1;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.content-overlay {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 90%;
+}
+
+.logo {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.logo-text {
+        font-size: 1.5rem;
+        color: white;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 10vw, 8rem);
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-weight: 400;
+    margin: 1rem 0 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+    border: none;
+    border-radius: 50px;
+    padding: 0.75rem 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    background-color: var(--primary-blue);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: clamp(2rem, 8vw, 5rem);
+    }
+    h2 {
+        font-size: clamp(1rem, 4vw, 2rem);
+        letter-spacing: 0.2rem;
+    }
+    .arched-line {
+        height: 150px;
+        border-radius: 50% / 50px 50px 0 0;
+    }
+}
+
+/* Main-button container styling */
 .min-button-container {
     background-color: #ffffff; /* White background for the main content area */
     padding: 40px; /* Generous padding inside the container */
