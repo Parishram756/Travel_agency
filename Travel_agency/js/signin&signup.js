@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const forgotContainer = document.getElementById("forgot-container");
   const resetMsg = document.getElementById("reset-msg");
 
-  // Close buttons redirect to home page (change to your homepage URL if needed)
+  // Close buttons redirect to home page 
   document.getElementById("close-login").addEventListener("click", () => {
     window.location.href = "/Travel_agency/Travel_agency/index.html";
   });
