@@ -519,3 +519,49 @@ h1 {
     padding:5px;
 }
 
+/*styling for coockies*/
+
+ #cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #343a40; /* Dark background from Bootstrap */
+    color: white;
+    padding: 1rem;
+    z-index: 1050; /* A high z-index to ensure it's on top of other content */
+    border-top: 1px solid #495057;
+    display: none; /* Initially hidden, will be shown by JS if no cookie */
+}
+#cookie-banner .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#cookie-banner .banner-text {
+    flex-grow: 1;
+    margin-right: 1rem;
+}
+#cookie-banner .btn-group {
+    display: flex; /* Use flexbox for spacing */
+    gap: 0.5rem;  /* Add space between buttons */
+    white-space: nowrap;
+}
+
+/* --- Button Styling for circular shape and hover effect --- */
+#cookie-banner .btn {
+    border-radius: 9999px; /* This creates the pill-shaped "circular" buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#agree-btn:hover {
+    background-color: #0d6efd; /* Darker blue on hover */
+    border-color: #0d6efd;
+}
+
+#disagree-btn:hover {
+    background-color: #5c636a; /* Darker gray on hover */
+    border-color: #5c636a;
+}
+
