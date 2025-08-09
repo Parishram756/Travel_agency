@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login</title>
+  <link rel="stylesheet" href="/Travel_agency/Travel_agency/css/login.css" />
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js" defer></script>
+  <script src="/Travel_agency/Travel_agency/js/signin&signup.js" defer></script>
+</head>
+<body>
+  
+
+  <div class="wrapper">
+
+    <!-- Login Form -->
+    <div class="form-box login">
+      <div class="form-header">
+        <h2>Sign In</h2>
+        <span class="form-close" id="close-login">&times;</span>
+      </div>
+      <form>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+          <input type="email" required placeholder=" " />
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+          <input type="password" required placeholder=" " />
+          <label>Password</label>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox" /> Remember me</label>
+          <a href="#" id="forgot-password">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="register-link">
+          <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+        </div>
+      </form>
+    </div>
+
+    <!-- Sign Up Form -->
+    <div class="form-box signup hidden">
+      <div class="form-header">
+        <h2>Sign Up</h2>
+        <span class="form-close" id="close-signup">&times;</span>
+      </div>
+      <form>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+          <input type="text" required placeholder=" " />
+          <label>Legal Name</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+          <input type="tel" required placeholder=" " />
+          <label>Contact Number</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+          <input type="email" required placeholder=" " />
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+          <input type="password" required placeholder=" " />
+          <label>Password</label>
+        </div>
+        <button type="submit" class="btn">Register</button>
+        <div class="register-link">
+          <p>Already have an account? <a href="#" id="show-login">Sign In</a></p>
+        </div>
+      </form>
+    </div>
+
+
+
+<!-- Forgot Password Form -->
+<div class="form-box forgot hidden" id="forgot-container">
+  <div class="form-header">
+    <h2>Forgot Password</h2>
+    <span class="form-close" id="cancel-reset-btn">&times;</span>
+  </div>
+  <form>
+    <div class="input-box">
+      <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+      <input type="email" id="forgot-email" required placeholder=" " />
+      <label for="forgot-email">Email</label>
+    </div>
+    <button type="submit" class="btn" id="send-reset-btn">Send Reset Link</button>
+    <p id="reset-msg" style="color: lightgreen; display:none; margin-top:10px;">
+      ✔ Reset link sent! (demo only)
+    </p>
+  </form>
+</div>
+
+
+
+
+  </div>
+
+</body>
+</html>
