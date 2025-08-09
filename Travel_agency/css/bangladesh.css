@@ -177,3 +177,356 @@ body {
         font-size: 1.7rem;
     }
 }
+
+    /* Custom CSS for Cox's Bazar Page */
+        /* General Reset & Typography */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: white; /* Changed to white background */
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #003366; /* Deep ocean blue */
+            padding: 1rem 2rem;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+            transform: scale(1.05);
+        }
+
+        .nav-links a.active {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        /* Back Link */
+        .back-link {
+            display: inline-block;
+            margin: 2rem 0 1rem;
+            color: #003366;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .back-link:hover {
+            color: #0055a5;
+            text-decoration: underline;
+        }
+
+        /* Destination Detail Section */
+        .destination-detail {
+            padding: 2rem 0;
+        }
+
+        .detail-header h1 {
+            font-size: 2.6rem;
+            color: #003366;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-meta {
+            color: #000000; /* Warm sunrise orange */
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .main-image img {
+            border-radius: 14px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .intro {
+            margin: 2rem 0;
+            font-size: 1.1rem;
+            color: #444;
+            text-align: justify;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Highlights Section */
+        .highlights h2,
+        .itinerary h2,
+        .booking-cta h2 {
+            color: #003366;
+            margin: 2.5rem 0 1.5rem;
+            font-size: 2rem;
+            border-bottom: 3px solid #e67e22;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.8rem;
+            margin-top: 1.5rem;
+        }
+
+        .highlight-card {
+            background: white;
+            padding: 1.6rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-top: 4px solid #003366;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+            border-top-color: #e67e22;
+        }
+
+        .highlight-card h3 {
+            color: #003366;
+            margin-bottom: 0.8rem;
+            font-size: 1.4rem;
+        }
+
+        /* Itinerary Table */
+        .itinerary table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .itinerary table th {
+            background: linear-gradient(to right, #003366, #0055a5);
+            color: white;
+            padding: 1.1rem;
+            text-align: left;
+        }
+
+        .itinerary table td {
+            padding: 1.1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .itinerary table tr:nth-child(even) {
+            background-color: #f8fbff;
+        }
+
+        .itinerary table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Booking CTA */
+        .booking-cta {
+            text-align: center;
+            padding: 2.8rem;
+            background: linear-gradient(135deg, #003366 0%, #0055a5 100%);
+            color: white;
+            margin: 3rem 0;
+            border-radius: 18px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .booking-cta::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/8/8f/Sunrise_in_Saint_Martin%27s_Island%2C_Cox%27s_Bazar._.jpg') no-repeat center center;
+            background-size: cover;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+
+        .booking-cta h2 {
+            color: white;
+            border: none;
+            margin-bottom: 1.2rem;
+            font-size: 2.3rem;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .booking-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 1.6rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .explore-btn {
+            background-color: #ffd700;
+            color: #003366;
+            font-size: 1.15rem;
+            font-weight: bold;
+            padding: 14px 36px;
+            border: none;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 15px rgba(255, 215, 0, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
+        .explore-btn:hover {
+            background-color: white;
+            transform: scale(1.08);
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.5);
+            color: #003366;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                background-color: white; /* Changed to white background */
+            }
+
+            .navbar {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .nav-links {
+                margin-top: 1rem;
+                gap: 1rem;
+            }
+
+            .detail-header h1 {
+                font-size: 2.2rem;
+            }
+
+            .booking-cta h2 {
+                font-size: 1.9rem;
+            }
+
+            .highlight-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .main-image img {
+                height: 300px;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styling */
+.main-footer {
+    background-color: #474c51; /* Dark background for the footer */
+    color: #f8f9fa; /* Light text color */
+    padding: 40px 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1); /* Shadow at the top of the footer */
+}
+
+.footer-heading {
+    color: #17a2b8; /* Info blue for headings */
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    margin-bottom: 10px;
+}
+
+.footer-list a {
+    color: #f8f9fa; /* Light text color for links */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-list a:hover {
+    color: #17a2b8; /* Hover color for links */
+}
+
+.footer-bottom {
+    background-color: black;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
+    text-align: center;
+    color: white;
+    justify-content: center;
+    padding:5px;
+}
+
