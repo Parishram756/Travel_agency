@@ -168,6 +168,7 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* Footer Styling */
 .main-footer {
     background-color: #474c51; /* Dark background for the footer */
     color: #f8f9fa; /* Light text color */
@@ -211,5 +212,3 @@ body {
     justify-content: center;
     padding:5px;
 }
-
-
