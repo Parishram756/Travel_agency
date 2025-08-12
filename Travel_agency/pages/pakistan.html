@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pakistan Travel</title>
+  <link rel="stylesheet" href="../css/pakistan.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">DESTINATIONS</a></li>
+        <li><a onclick="openModal()">CONTACT ME</a></li>
+      </ul>
+    </nav>
+    <div class="search-login">
+      <input type="text" placeholder="Search">
+      <button>Search</button>
+      <button class="login-btn">LOGIN</button>
+    </div>
+  </header>
+  <!-- Modal -->
+  <div class="modal" id="contactModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2>Contact Information</h2>
+      <p><strong>Email:</strong> sheheryyarkhan@gmail.com</p>
+      <p><strong>Phone:</strong> 03249042007</p>
+    </div>
+  </div>
+
+  <main>
+    <div class="grid-container">
+
+      <div class="card">
+        <a href="../pages/destination pakistan/lahore.html">
+          <img src="../assets/images/lahore.jpg" alt="Lahore">
+          <h3>Lahore</h3>
+          <p>Heart of Pakistan's culture and history.</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="../pages/destination pakistan/islamabad.html">
+          <img src="../assets/images/islamabad.jpg" alt="Islamabad">
+          <h3>Islamabad</h3>
+          <p>Pakistan’s modern capital surrounded by Margalla Hills.</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="../pages/destination pakistan/faisal.html">
+          <img src="../assets/images/faisal (2).jpg" alt="Faisal Mosque">
+          <h3>Faisal Mosque</h3>
+          <p>Iconic symbol of Islamabad with beautiful architecture.</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="../pages/destination pakistan/saiful.html">
+          <img src="../assets/images/jheel.jpg" alt="Saif ul Malook">
+          <h3>Saif ul Malook</h3>
+          <p>Fairytale lake near Naran surrounded by mountains.</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="../pages/destination pakistan/muree.html">
+          <img src="../assets/images/murree.jpg" alt="Murree">
+          <h3>Murree</h3>
+          <p>Popular hill station near Islamabad with colonial charm.</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="../pages/destination pakistan/peshawar.html">
+          <img src="../assets/images/peshawar.jpg" alt="Peshawar">
+          <h3>Peshawar</h3>
+          <p>Historic city with ancient bazaars and cultural heritage.</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="../pages/destination pakistan/swat.html">
+          <img src="../assets/images/swat.jpg" alt="Swat Valley">
+          <h3>Swat Valley</h3>
+          <p>Known as the Switzerland of Pakistan for its scenic beauty.</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="../pages/destination pakistan/azadkashmir.html">
+          <img src="../assets/images/kashmir.jpg" alt="Azad Kashmir">
+          <h3>Azad Kashmir</h3>
+          <p>Heaven on Earth with rivers, valleys, and peaceful vibes.</p>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    function openModal() {
+      document.getElementById("contactModal").style.display = "flex";
+    }
+    function closeModal() {
+      document.getElementById("contactModal").style.display = "none";
+    }
+    window.onclick = function(event) {
+      const modal = document.getElementById("contactModal");
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
+<footer>
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Popular Destinations - Khyber Pakhtukhwa</h3>
+      <ul>
+        <li><a href="#">Akorha khattak</a></li>
+        <li><a href="#">Swat Vlleys</a></li>
+        <li><a href="#">Chitral</a></li>
+        <li><a href="#">Qilla Baka Hisar</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Popular Destinations - Punjab</h3>
+      <ul>
+        <li><a href="#">Minar-e-Pakistan</a></li>
+        <li><a href="#">Cintorus Mall</a></li>
+        <li><a href="#">Shakkar Panrhya</a></li>
+        <li><a href="#">Jinnah Park</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Popular Destinations - Sindh</h3>
+      <ul>
+        <li><a href="#">Alama Iqbal Tomb</a></li>
+        <li><a href="#">Faisal Mosque</a></li>
+        <li><a href="#">Hunza Valley</a></li>
+        <li><a href="#">Lahore Fort</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Travel Tales & Trails.
+  </div>
+</footer>
