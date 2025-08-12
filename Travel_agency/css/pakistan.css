@@ -34,6 +34,10 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+.section-header {
+    text-align: center; /* Centers everything inside */
+    margin-bottom: 20px;
+}
 
 /* Main content */
 main {
