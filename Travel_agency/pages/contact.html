@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us</title>
+  <style>
+    :root {
+      --bg: #f4f9ff;
+      --card: #ffffff;
+      --accent: #0b74ff;
+      --muted: #6b7280;
+      --radius: 12px;
+      --shadow: 0 6px 18px rgba(11, 116, 255, 0.08);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, #eaf4ff 0%, var(--bg) 100%);
+      padding: 32px;
+      color: #111827;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 960px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    /* Left info card */
+    .info {
+      background: var(--card);
+      padding: 28px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .info h1 {
+      margin: 0 0 10px 0;
+      font-size: 1.4rem;
+    }
+
+    .info p {
+      margin: 0 0 16px 0;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 6px;
+    }
+
+    .contact-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .badge {
+      background: #eef6ff;
+      color: var(--accent);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+
+    /* Form card */
+    form.contact-form {
+      background: var(--card);
+      padding: 22px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    label {
+      display: block;
+      font-size: 0.85rem;
+      margin-bottom: 6px;
+      color: #374151;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #e6edf8;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      background: #fbfdff;
+      outline: none;
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 6px 18px rgba(11, 116, 255, 0.08);
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .full {
+      grid-column: 1 / -1;
+    }
+
+    .options {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    .submit-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    button {
+      background: var(--accent);
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 8px 22px rgba(11, 116, 255, 0.12);
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+
+    button:hover {
+      transform: translateY(-3px);
+    }
+
+    .secondary {
+      background: transparent;
+      border: 1px solid #e6edf8;
+      color: var(--muted);
+      padding: 9px 14px;
+      border-radius: 10px;
+    }
+
+    /* Small screens */
+    @media (max-width: 800px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      .submit-row {
+        flex-direction: column-reverse;
+        align-items: stretch;
+      }
+    }
+
+    /* Required indicator */
+    .req {
+      color: #d9534f;
+      margin-left: 6px;
+      font-weight: 700;
+    }
+
+    .hint {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Info Section -->
+    <div class="info">
+      <h1>Get in touch</h1>
+      <p>Have a question or want to work together? Fill the form and we'll get back to you within 1–2 business days.</p>
+
+      <div class="contacts">
+        <div class="contact-row">
+          <span class="badge">Office</span>
+          <span>Ulster University London</span>
+        </div>
+        <div class="contact-row">
+          <strong>Contact with Sheheryar:</strong>
+          <span style="margin-left:8px; color:var(--muted)">+447506278768</span>
+          </div>
+          <div class="contact-row">
+          <strong>Contact with Masum:</strong>
+          <span style="margin-left:8px; color:var(--muted)">+447438363534</span>
+          </div>
+          <div class="contact-row">
+          <strong>Contact with Parishram:</strong>
+          <span style="margin-left:8px; color:var(--muted)">+447570689760</span>
+          </div>
+          <div class="contact-row">
+          <strong>Contact with Shraya rana:</strong>
+          <span style="margin-left:8px; color:var(--muted)">+447570731525</span>
+          </div>
+        <div class="contact-row">
+          <strong>Email:</strong>
+          <span style="margin-left:8px; color:var(--muted)">Sheheryyarkhan@gmail.com</span>
+        </div>
+      </div>
+       <div class="contact-row">
+          <strong>Email:</strong>
+          <span style="margin-left:8px; color:var(--muted)">masumahmad12@gmail.com</span>
+        </div>
+    
+      <p class="hint">Quick tips: include a clear subject and a phone number if you want a callback.</p>
+    </div>
+
+    <!-- Contact Form -->
+    <form
+      class="contact-form"
+      onsubmit="event.preventDefault(); alert('Form submitted (demo). Add backend to actually send.');"
+      novalidate
+    >
+      <div class="grid">
+        <div>
+          <label for="name">Full name <span class="req">*</span></label>
+          <input id="name" name="name" type="text" placeholder="John Doe" required minlength="2" />
+        </div>
+
+        <div>
+          <label for="email">Email <span class="req">*</span></label>
+          <input id="email" name="email" type="email" placeholder="name@example.com" required />
+        </div>
+
+        <div>
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="0xx xxx xxxxxx" pattern="^[0-9+\-\s]{7,20}$" />
+        </div>
+
+        <div>
+          <label for="subject">Subject <span class="req">*</span></label>
+          <select id="subject" name="subject" required>
+            <option value="">-- Choose --</option>
+            <option>General question</option>
+            <option>Partnership</option>
+            <option>Bug report</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="full">
+          <label for="message">Message <span class="req">*</span></label>
+          <textarea id="message" name="message" placeholder="Type your message..." required minlength="10"></textarea>
+        </div>
+
+        <div class="full options">
+          <label style="margin:0">
+            <input type="checkbox" name="subscribe" /> Subscribe to newsletter
+          </label>
+
+          <label style="margin:0">
+            <input type="radio" name="contact_via" value="email" checked /> Contact via email
+          </label>
+
+          <label style="margin:0">
+            <input type="radio" name="contact_via" value="phone" /> Contact via phone
+          </label>
+        </div>
+
+        <div class="full submit-row">
+          <button type="submit">Send message</button>
+          <button type="reset" class="secondary">Reset</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
