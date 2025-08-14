@@ -62,7 +62,7 @@
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
-                    <button class="btn btn-primary ms-2" onclick="window.location.href='/Travel_agency/Travel_agency/pages/login.html'">LOGIN</button>
+                    <button class="btn btn-primary ms-2" onclick="window.location.href='/Travel_agency/pages/login.html'">LOGIN</button>
                 </div>
             </div>
         </nav>
@@ -91,7 +91,7 @@
 
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="assets/images/mountain.jpg" class="d-block w-100 hero-image" alt="A mountains photo of nepal.">
+                        <img src="assets/images/mteverest.jpg" class="d-block w-100 hero-image" alt="A mountains photo of nepal.">
                         <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
                             <div class="text-content">
                                 <h1 class="display-3">Explore the Great Outdoors</h1>
@@ -101,7 +101,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/images/treacking.jpg" class="d-block w-100 hero-image" alt=" Offroad treaking in Nepal">
+                        <img src="assets/images/village.jpg" class="d-block w-100 hero-image" alt=" Traditional village">
                         <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
                             <div class="text-content">
                                 <h1 class="display-3">Discover breathtaking landscapes and new adventures</h1>
@@ -111,17 +111,17 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/images/farming.jpg" class="d-block w-100 hero-image" alt="Traditional agricultural in hilly area">
+                        <img src="assets/images/baudha.jpg" class="d-block w-100 hero-image" alt="baudhanath temple">
                         <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
                             <div class="text-content">
-                                <h1 class="display-3">Traditional Farming</h1>
+                                <h1 class="display-3"> Explore the tradition</h1>
                                 <p class="lead">Experience the vibrant energy.</p>
                         
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/images/tea farming.jpg" class="d-block w-100 hero-image" alt="Tea Farming in Illam Nepal">
+                        <img src="assets/images/teafarming.jpg" class="d-block w-100 hero-image" alt="Tea Farming in Illam Nepal">
                         <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
                             <div class="text-content">
                                 <h1 class="display-3">Tea Farming</h1>
@@ -169,15 +169,27 @@
                 </div>
             </div>
         </div>
+
+        <!--middle section-->
         <div class="main-middle">
-            <!-- Background Video -->
-            <video class="background-video" autoplay loop muted playsinline>  
-                <source src="assets/video/bkgrd-video.mp4" type="video/mp4" >
-            </video>
-            <div class="content-overlay">
-                <h1>Best in Travel</h1>
-                <h2>2025</h2>
-                <button type="button" class="btn btn-primary">Discover the winners</button>
+            <div class="row g-0">
+                <div class="col-lg-6">
+                    <div class="content-column-left">
+                        <h1>Hidden Gems & Local Flavors</h1>
+                        <blockquote>
+                            "To travel is to discover that everyone is wrong about other countries."
+                        </blockquote>
+                        <p>
+                            Go beyond the guidebook with our curated tips on finding hidden gems. We believe the best travel experiences come from embracing the local way of life. From bustling street markets to quiet, family-owned cafes, we'll guide you to authentic experiences that connect you with the heart and soul of each destination. Prepare to taste new flavors, meet fascinating people, and create stories that are uniquely your own.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="image-column-right">
+                        <img src="assets/images/newarithali.jpg" alt="local newari thali food in Nepal" class="img-fluid">
+                    </div>
+                </div>
             </div>
         </div>
     
@@ -189,7 +201,7 @@
 
                 <!-- Nepal Card -->
                 <div class="col-12 col-md-4">
-                    <div class="country-card text-center p-4 rounded-3 shadow-sm" onclick="window.location.href='nepal.html'">
+                    <div class="country-card text-center p-4 rounded-3 shadow-sm" onclick="window.location.href='pages/nepal.html'">
                         <!-- Heart icon -->
                         <i class="fas fa-heart favorite-icon" onclick="event.stopPropagation(); toggleFavorite(this);"></i>
 
@@ -261,9 +273,6 @@
                 <!-- Pakistan Card -->
                 <div class="col-12 col-md-4">
                     <div class="country-card text-center p-4 rounded-3 shadow-sm" onclick="window.location.href='pages/pakistan.html'">
-                        <!-- Heart icon -->
-                        <i class="fas fa-heart favorite-icon" onclick="event.stopPropagation(); toggleFavorite(this);"></i>
-
                         <!-- Bootstrap Carousel for Pakistan -->
                         <div id="pakistanCarousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
