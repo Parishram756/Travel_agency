@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhorpatan Hunting Reserve - Travel Tales & Trails</title>
+    <title>Dhorpatan</title>
+  <link rel="stylesheet" href="/Travel_agency/css/pages.css">
+    <script src="/Travel_agency/js/signin&signup.js"></script>
     
-    <link rel="stylesheet" href="/Travel_agency/css/pages.css">
-    
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/Travel_agency/assets/images/travel_tales.jpg">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/Travel_agency/index.html">
-                <img src="/Travel_agency/assets/images/travel_tales.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                Travel Tales
-            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -25,10 +26,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="/Travel_agency/index.html">HOME</a>
+                        <a class="nav-link" aria-current="page" href="/Travel_agency/index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../about.html">ABOUT</a>
+                        <a class="nav-link" href="/Travel_agency/pages/about.html">ABOUT</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDestinations" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -41,123 +42,139 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../contact.html">CONTACT US</a>
-                    </li>
+                            <a class="nav-link" href="../contact.html" >CONTACT US</a>
+                        </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-                <button class="btn btn-primary ms-2" onclick="window.location.href='../login.html'">LOGIN</button>
+                <button class="btn btn-primary ms-2" onclick="window.location.href='/Travel_agency/pages/login.html'">LOGIN</button>
             </div>
         </div>
     </nav>
+    <!-- Destination Section -->
+<section class="destination-detail">
+    <div class="container">
+        <a href="/Travel_agency/pages/nepal.html" class="back-link">&larr; Back to Destinations</a>
+        
+        <div class="detail-header">
+            <h1 style="text-align: center;">Dhorpatan Hunting Reserve</h1>
+            <div class="header-meta" style="text-align: center;">
+                <span>🏔 Alpine Meadows & Mountain Views | 🐏 Himalayan Blue Sheep Spotting | 🏕 Remote Camping Adventures</span>
+            </div>
+        </div>
 
-    <main class="destination-detail">
-        <div class="container">
-            <a href="../nepal.html" class="back-link">&larr; Back to Destinations</a>
-            
-            <header class="detail-header text-center">
-                <h1>Dhorpatan Hunting Reserve</h1>
-                <div class="header-meta">
-                    <span>🏞️ Alpine Meadows & Wildlife Trails | 🥁 Magar & Thakali Village Life | ⛺ Rustic Village Lodges</span>
-                </div>
-            </header>
+        <div class="detail-content">
+            <div class="main-image" style="text-align: center;">
+                <img src="/Travel_agency/assets/images/Sheeps in Dhorpatan.jpg" 
+                alt="Dhorpatan Hunting Reserve" 
+                style="max-height: 400px; border-radius: 14px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18); display: block; margin: 0 auto; width: auto; max-width: 100%; object-fit: contain;">
+            </div>
 
-            <article class="detail-content">
-                <figure class="main-image-container text-center">
-                    <img src="/Travel_agency/assets/images/Dhorpatan.jpg" 
-                    alt="A stunning alpine meadow in Dhorpatan with mountains in the background." 
-                    class="img-fluid rounded shadow" style="max-height: 400px; object-fit: contain;">
-                </figure>
-                
-                <section class="intro">
-                    <p>Dhorpatan, tucked away in the western hills of Nepal, is the country's only hunting reserve and a paradise for nature lovers. With sweeping grasslands, alpine forests, and snow-capped peaks in the distance, Dhorpatan offers a rare blend of wilderness and cultural charm. Home to diverse wildlife like blue sheep and Himalayan tahr, as well as traditional villages of the Magar and Thakali people, it’s a perfect escape for trekking, camping, and immersing yourself in unspoiled Himalayan beauty.</p>
-                </section>
+            <div class="intro">
+                <p>Dhorpatan Hunting Reserve, Nepal's only hunting reserve, is a remote high-altitude paradise stretching across Rukum, Baglung, and Myagdi districts. Known for its wide alpine meadows, snow-capped mountain backdrops, and rare Himalayan blue sheep, the reserve offers an authentic off-the-beaten-path trekking experience. Visitors can enjoy camping under starry skies, exploring diverse wildlife habitats, and interacting with local Magar communities.</p>
+            </div>
 
-                <section class="highlights">
-                    <h2>Top Experiences</h2>
-                    <div class="highlight-grid">
-                        <div class="highlight-card">
-                            <h3>Dhorpatan Hunting Reserve</h3>
-                            <p>The only hunting reserve in Nepal, known for its high-altitude grasslands and rich wildlife. A haven for photographers, nature enthusiasts, and those seeking rare Himalayan fauna.</p>
-                        </div>
-                        <div class="highlight-card">
-                            <h3>Trekking Through Alpine Meadows</h3>
-                            <p>Enjoy peaceful hikes across vast meadows dotted with wildflowers, surrounded by stunning mountain backdrops. The trails pass through remote villages and quiet forests.</p>
-                        </div>
-                        <div class="highlight-card">
-                            <h3>Magar & Thakali Village Life</h3>
-                            <p>Stay in traditional houses, taste authentic meals, and learn about the customs of the Magar and Thakali people. Experience evenings filled with folk songs and warm hospitality.</p>
-                        </div>
+            <div class="highlights">
+                <h2>Top Experiences</h2>
+                <div class="highlight-grid">
+                    <div class="highlight-card">
+                        <h3>Blue Sheep Spotting</h3>
+                        <p>Hike into the reserve's high pastures to catch a glimpse of the elusive Himalayan blue sheep grazing against a backdrop of towering peaks.</p>
                     </div>
-                </section>
-                
-                <section class="itinerary">
-                    <h2>Dhorpatan's Itinerary</h2>
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Day</th>
-                                <th>Activities</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Day 1</td>
-                                <td>Arrive in Burtibang or nearby entry point from Baglung or Rukum. Short hike to the edge of the reserve, exploring riverside trails and alpine views. Evening relaxation in a village homestay.</td>
-                            </tr>
-                            <tr>
-                                <td>Day 2</td>
-                                <td>Begin the day with a trek deep into Dhorpatan Hunting Reserve. Spot wildlife like blue sheep, pheasants, and Himalayan tahr. Picnic lunch by the meadows. Return to camp or lodge in the evening.</td>
-                            </tr>
-                            <tr>
-                                <td>Day 3</td>
-                                <td>Explore remote Magar and Thakali villages, learning about their lifestyle and traditions. Afternoon free for photography and short hikes to nearby viewpoints.</td>
-                            </tr>
-                            <tr>
-                                <td>Day 4</td>
-                                <td>Final morning walk to capture sunrise over the mountains. Return journey via Baglung, Rukum, or Pokhara, taking in the scenic drives along the way.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                
-                <section class="booking-cta text-center">
-                    <h2>Discover the untouched beauty of Dhorpatan with our trekking and camping packages!</h2>
-                    <p>Our Dhorpatan packages include park permits, guided treks, authentic village stays, and meals.</p>
-                    <a href="#" class="btn explore-btn">View Tour Packages</a>
-                </section>
-            </article>
-        </div> 
-    </main>
+                    <div class="highlight-card">
+                        <h3>Alpine Trekking</h3>
+                        <p>Explore the pristine trails through pine forests, meadows, and rugged mountain passes with panoramic views of Dhaulagiri and other ranges.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Magar Cultural Encounters</h3>
+                        <p>Stay in remote Magar villages, savor traditional meals, and learn about the customs and lifestyle of this warm and welcoming community.</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="itinerary">
+                <h2>Dhorpatan Itinerary</h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Activities</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Day 1</td>
+                            <td>Arrive in Burtibang or Rukumkot via road. Begin trek towards the reserve with a scenic hike through terraced hillsides and forests.</td>
+                        </tr>
+                        <tr>
+                            <td>Day 2</td>
+                            <td>Trek into the alpine zone, spotting blue sheep and birds along the way. Set up camp in the meadows of Dhorpatan.</td>
+                        </tr>
+                        <tr>
+                            <td>Day 3</td>
+                            <td>Explore high pastures and enjoy mountain panoramas. Visit nearby Magar settlements and experience their hospitality.</td>
+                        </tr>
+                        <tr>
+                            <td>Day 4</td>
+                            <td>Return trek to the starting point and depart for your next destination.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="booking-cta">
+                <h2>Discover the wild beauty of Dhorpatan with our guided trekking packages!</h2>
+                <p>Our Dhorpatan adventures include trekking guides, camping gear, meals, permits, and cultural experiences with local communities.</p>
+                <button class="explore-btn">View Tour Packages</button>
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- Footer Section -->
     <footer class="main-footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0">
+                <!-- Popular Destinations - Nepal -->
+                 <div class="col-md-4 mb-4 mb-md-0">
                     <h5 class="footer-heading">Popular Destinations - Nepal</h5>
                     <ul class="footer-list">
-                        <li><a href="lumbini.html">Lumbini</a></li>
-                        <li><a href="manang.html">Manang</a></li>
-                        <li><a href="chitwan.html">Chitwan National Park</a></li>
-                        <li><a href="pokhara.html">Pokhara Valley</a></li>
+                        <li><a href="/Travel_agency/pages/Nepal Destinations/rukum.html" target="_blank">Dhorpatan</a></li>
+                        <li><a href="/Travel_agency/pages/Nepal Destinations/pokhara.html" target="_blank">Pokhara</a></li>
+                        <li><a href="/Travel_agency/pages/Nepal Destinations/manang.html" target="_blank">Manang</a></li>
+                        <li><a href="/Travel_agency/pages/Nepal Destinations/paanchpokhari.html" target="_blank">Paanchpokhari</a></li>
                     </ul>
                 </div>
 
+                <!-- Popular Destinations - Bangladesh -->
                 <div class="col-md-4 mb-4 mb-md-0">
                     <h5 class="footer-heading">Popular Destinations - Bangladesh</h5>
                     <ul class="footer-list">
-                        <li><a href="../bangladesh/sundarbans.html">Sundarbans</a></li>
-                        <li><a href="../bangladesh/coxsbazar.html">Cox's Bazar Beach</a></li>
-                        <li><a href="../bangladesh/stmartin.html">Saint Martin's Island</a></li>
-                        <li><a href="../bangladesh/lalbagh.html">Lalbagh Fort</a></li>
+                        <li><a href="sundarbans.html" target="_blank">Sundarbans</a></li>
+                        <li><a href="coxsbazar.html" target="_blank">Cox's Bazar Beach</a></li>
+                        <li><a href="stmartin.html" target="_blank">Saint Martin's Island</a></li>
+                        <li><a href="lalbagh.html" target="_blank">Lalbagh Fort</a></li>
                     </ul>
                 </div>
 
+                <!-- Popular Destinations - Pakistan -->
                 <div class="col-md-4">
                     <h5 class="footer-heading">Popular Destinations - Pakistan</h5>
                     <ul class="footer-list">
-                        <li><a href="https://www.google.com/search?q=Badshahi+Mosque+tourism" target="_blank" rel="noopener noreferrer">Badshahi Mosque</a></li>
-                        <li><a href="https://www.google.com/search?q=Faisal+Mosque+tourism" target="_blank" rel="noopener noreferrer">Faisal Mosque</a></li>
-                        <li><a href="https://www.google.com/search?q=Hunza+Valley+tourism
+                        <li><a href="https://www.google.com/search?q=Badshahi+Mosque+tourism" target="_blank">Badshahi Mosque</a></li>
+                        <li><a href="https://www.google.com/search?q=Faisal+Mosque+tourism" target="_blank">Faisal Mosque</a></li>
+                        <li><a href="https://www.google.com/search?q=Hunza+Valley+tourism" target="_blank">Hunza Valley</a></li>
+                        <li><a href="https://www.google.com/search?q=Lahore+Fort+tourism" target="_blank">Lahore Fort</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+        <footer class="footer-bottom">
+            <p class="mb-3">&copy; 2025 Travel Tales & Trails.</p>
+        </footer>
+
+
+</body>
+</html>
