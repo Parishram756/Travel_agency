@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Close buttons redirect to home page 
   document.getElementById("close-login").addEventListener("click", () => {
-    window.location.href = "/Travel_agency/Travel_agency/index.html";
+    window.location.href = "/Travel_agency/index.html";
   });
 
   document.getElementById("close-signup").addEventListener("click", () => {
-    window.location.href = "/Travel_agency/Travel_agency/index.html";
+    window.location.href = "/Travel_agency/index.html";
   });
 
   // Show signup form, hide login & forgot password
