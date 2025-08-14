@@ -353,17 +353,6 @@ h1 {
     }
 }
 
-/* Heart icon styling */
-.favorite-icon {
-    position: absolute; 
-    top: 15px; 
-    right: 15px; 
-    font-size: 1.8rem; 
-    color: #ccc;
-    cursor: pointer; 
-    z-index: 10; 
-    transition: color 0.3s ease; 
-}
 
 /* Styling for the country name inside the card, at the bottom */
 .country-name-inside {
@@ -438,6 +427,103 @@ h1 {
     height: 100%;
 }
 
+/*bg-video styling*/
+.bg-video {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.bg-video::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: 1;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.content-overlay {
+    position:relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 90%;
+}
+.logo {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.logo-text {
+        font-size: 1.5rem;
+        color: white;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 10vw, 8rem);
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-weight: 400;
+    margin: 1rem 0 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+    border: none;
+    border-radius: 50px;
+    padding: 0.75rem 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    background-color: var(--primary-blue);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: clamp(2rem, 8vw, 5rem);
+    }
+    h2 {
+        font-size: clamp(1rem, 4vw, 2rem);
+        letter-spacing: 0.2rem;
+    }
+}
 /* Footer Styling */
 
 .main-footer {
